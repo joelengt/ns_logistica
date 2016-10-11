@@ -1,0 +1,117 @@
+.Home
+	height 100vh
+	&__containner
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		position relative
+		height 100%
+		width 100%
+		&--left
+			width 50%
+			height 100%
+			display flex
+			align-items center
+			justify-content center
+			.CoverImage
+				background-image: url('../images/mobile.svg')
+				width 500px
+				background-size contain
+				background-position center
+				background-repeat no-repeat
+				height 500px
+		&--right
+			width 50%
+			display flex
+			align-items center
+			justify-content center
+			flex-direction column
+			height 100%
+			.LoginContainner
+				margin .5em 0
+				width 90%
+				box-sizing border-box
+				max-width 380px
+				background-color white
+				box-shadow 0px 0px 5px #dadada
+				padding 1.5em
+				&__title
+					padding 1em 0
+					color #68707a
+				&__form
+					&--inputContainner
+						margin 5px 0
+						// label
+						// 	padding .5em 0
+						// 	font-weight bold
+						// 	display none
+						// input
+						// 	font-size 14px
+						// 	width 100%
+						// 	border 1px solid #d0d0d0
+						// 	outline 0
+						// 	border-radius 2px
+						// 	padding 10px 5px
+						// 	box-sizing border-box
+						// 	color #b1b5ba
+					&--dateForget
+						width 100%
+						text-align center
+						p
+							color #909090
+							font-size 14px
+							font-weight lighter
+							display inline-block
+						a
+							color #1e8c88
+							margin-left 5px
+							display inline-block
+							text-decoration underline
+							font-weight bold
+					&--btnSubmit
+						width 100%
+						margin 1em 0 .5em 0
+						.loginSubmit
+							border 0
+							cursor pointer
+							background-color #a9a8a8
+							color white
+							padding 10px 5px
+							font-weight bold
+							font-size 1.2em
+							width 100%
+							border-radius 4px
+				.ErrorLogin
+					text-align center
+					color Rojo_error
+		&--footer
+			width 100%
+			position absolute
+			bottom 0
+			.Links
+				width 90%
+				margin 0 auto
+				display flex
+				&__left
+					text-align left
+					width 70%
+					list-style none
+					margin 0
+					padding 0
+					display flex
+					justify-content space-around
+					&--list
+						min-width 100px
+						padding 1em
+						a
+							font-weight bold
+							font-size 14px
+							color #909090
+				&__right
+					width 30%
+					// text-align right
+					display flex
+					justify-content flex-end
+					align-items center
+					p
+						color #909090
